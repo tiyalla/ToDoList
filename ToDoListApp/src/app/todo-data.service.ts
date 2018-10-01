@@ -21,7 +21,7 @@ export class TodoDataService {
     return this;
   }
 
-  postToDo(id: number): TodoDataService{
+  deleteTodoById(id: number): TodoDataService{
     //create new array containing elements that do not have matching id
     this.toDos = this.toDos
       .filter(todo => todo.id !== id);
