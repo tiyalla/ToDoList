@@ -1,5 +1,5 @@
 import { TestBed, inject } from '@angular/core/testing';
-import { Todo } from './todo';
+import { Todo } from '../todo/todo';
 
 
 import { TodoDataService } from './todo-data.service';
