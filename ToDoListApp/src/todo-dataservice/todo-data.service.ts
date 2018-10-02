@@ -4,11 +4,12 @@ import { Todo } from '../todo/todo';
 @Injectable({
   providedIn: 'root'
 })
+
 export class TodoDataService {
 
   lastId: number = 0;
 
-  toDos: Todo[] = [];
+  todos: Todo[] = [];
 
   constructor() { }
 
@@ -16,14 +17,14 @@ export class TodoDataService {
     if(!todo.id){
       todo.id = ++this.lastId;
     }
-    this.toDos.push(todo);
+    this.todos.push(todo);
 
     return this;
   }
 
   deleteTodoById(id: number): TodoDataService{
     //create new array containing elements that do not have matching id
-    this.toDos = this.toDos
+    this.todos = this.todos
       .filter(todo => todo.id !== id);
     return this;
   }
@@ -39,12 +40,12 @@ export class TodoDataService {
 
 
   getAllTodos(): Todo[] {
-    return this.toDos;
+    return this.todos;
   }
 
   getTodoById(id: number): Todo {
 
-    return this.toDos
+    return this.todos
       .filter(todo => todo.id === id)
       .pop();
 
