@@ -14,7 +14,7 @@ export class TodoDataService {
   constructor() { }
 
   addTodo(todo: Todo): TodoDataService{
-    if(!todo.id){
+    if(!todo.id) { 
       todo.id = ++this.lastId;
     }
     this.todos.push(todo);
