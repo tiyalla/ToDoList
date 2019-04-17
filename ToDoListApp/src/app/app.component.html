@@ -1,5 +1,5 @@
 <section class="todoapp">
-
+<!-- header that lets us create new todo -->
   <header class="header">
 
     <h1>Todos</h1>
@@ -9,9 +9,9 @@
   </header>
 
   <section class="main" *ngIf="todos.length > 0">
-
+    <!-- list that displays todos -->
     <ul class="todo-list">
-
+      <!-- list item that displays single todo -->
       <li *ngFor="let todo of todos" [class.completed]="todo.complete">
 
         <div class="view">
@@ -27,7 +27,7 @@
     </ul>
 
   </section>
-
+  <!-- footer that displays statistics -->
   <footer class="footer" *ngIf="todos.length > 0">
 
     <span class="todo-count"><strong>{{todos.length}}</strong> {{todos.length == 1 ? 'item' : 'items'}} left</span>
