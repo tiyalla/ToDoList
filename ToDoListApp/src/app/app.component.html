@@ -1,12 +1,5 @@
 <section class="todoapp">
-<!-- header that lets us create new todo -->
-  <header class="header">
 
-    <h1>Todos</h1>
-
-    <input class="new-todo" placeholder="What needs to be done?  " autofocus="" [(ngModel)]="newTodo.title" (keyup.enter)= "addTodo()" >
-
-  </header>
 
   <section class="main" *ngIf="todos.length > 0">
     <!-- list that displays todos -->
