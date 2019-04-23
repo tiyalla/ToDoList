@@ -1,5 +1,5 @@
 <section class="todoapp">
-
+  <app-todo-list-header (add)="onAddTodo($event)"></app-todo-list-header>
 
   <section class="main" *ngIf="todos.length > 0">
     <!-- list that displays todos -->

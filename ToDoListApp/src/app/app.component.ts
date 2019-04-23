@@ -10,14 +10,14 @@ import {Todo} from './todo/todo';
 })
 export class AppComponent {
 
-  newTodo: Todo = new Todo();
+  
 
   constructor(private todoDataService: TodoDataService) {
   }
 
-  addTodo() {
-    this.todoDataService.addTodo(this.newTodo);
-    this.newTodo = new Todo();
+  // New method to handle event emitted by TodoListHeaderComponent
+  onAddTodo(todo: Todo) {
+    this.todoDataService.addTodo(todo);
   }
 
   toggleTodoComplete(todo) {
