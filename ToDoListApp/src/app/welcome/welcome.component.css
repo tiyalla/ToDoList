@@ -1,0 +1,61 @@
+.wrap{
+    margin: 0 auto;
+    max-width: 800px;
+}
+.site-header{    
+    padding: 0.1%;
+}
+.site-header h4{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+a:hover{
+    color: pink;
+}
+
+.logins a{
+    margin: 1%;
+}
+
+a.button{
+    display: inline-block;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    font-size: .7rem;
+    line-height: 1.0714285714;
+    letter-spacing: .1em;
+    
+    padding: .85rem .75rem;
+    background-color: whitesmoke;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.05);
+    border-radius: .25rem;
+    color: grey;
+    border: none;
+}
+
+a.button:hover{
+    color:#007090;
+}
+
+.welcome-title{
+    
+	width: 100%;
+	font-size: 50px;
+	font-weight: 100;
+	text-align: left;
+	color: rgba(175, 47, 47, 0.15);
+	-webkit-text-rendering: optimizeLegibility;
+	-moz-text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
+}
+
+footer p{
+   text-transform: uppercase; 
+   color: white;
+   font-size: 18px;
+}
